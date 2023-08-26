@@ -5,10 +5,10 @@
   //   </nav>
   // </div>
 let header = document.querySelector(".header")
+let page = document.querySelector(".menu ul li")
 mainHeader = () =>{
   return header.innerHTML = `
-  <div class="container" data-aos="fade-up"
-  data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
+  <div class="container">
   <div class="logo">
     <img src="img/logo.png" alt="">
     <H1>Base</H1>
@@ -121,8 +121,7 @@ let getMode = localStorage.getItem("mode");
 let footer = document.querySelector(".footer")
 mainFooter = () =>{
   return footer.innerHTML = `
-  <div class="container" data-aos="fade-down"
-  data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
+  <div class="container">
   <div class="main">
       <div class="social">
         <div class="logo">

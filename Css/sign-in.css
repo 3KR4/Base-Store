@@ -240,4 +240,16 @@
   .form .contact {
     padding: 53px 6px 55px;
 }
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--body-color);
+    top: 100px;
+    width: 94%;
+    left: 11px;
+    padding: 20px 0 33px;
+    gap: 20px;
+    border-radius: 7px;
+}
 }

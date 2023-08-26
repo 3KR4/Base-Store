@@ -111,8 +111,7 @@ let blogCards = document.querySelector(".blogs .cards")
 function rednderblogs() {
 let blogItems = blogs.map((item) => {
   return`
-  <div class="card col-12 col-lg-4 col-md-6" data-aos="zoom-in-up"
-  data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+  <div class="card col-12 col-lg-4 col-md-6">
   <div class="img-holder">
     <img src="${item.img}" alt="">
     <div class="animation"><a href="#">Read More</a></div>

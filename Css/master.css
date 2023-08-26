@@ -224,6 +224,7 @@ color: var(--text-color);
   color: var(--paragraph);
   margin-bottom: 30px;
   letter-spacing: 0.4px;
+  text-align: left;
 }
 
                                                         /*! team */
@@ -1181,6 +1182,7 @@ nav .searchToggel i {
 }
 .landing .text p {
 max-width: 324px;
+text-align: left;
 }
 /* chose-us */
 .choose-us .container {
@@ -1206,13 +1208,20 @@ max-width: 324px;
   top: 2rem;
   left: 124px;
 }
+.team .cards .card .bef {
+  width: 100%;
+}
+.team .cards .card .bef::before {
+    width: 100%;
+    left: 0px;
+}
 .service .text {
   padding: 21px 0 40px;
 }.service .card p {
   margin-bottom: 0;
 }
 .service .card {
-  padding: 40px 0 0;
+  padding: 40px 22px 40px;
 }
 .Prices .card {
   max-width: 100%;
@@ -1222,7 +1231,7 @@ max-width: 324px;
   bottom: -60rem;
 }
 .Prices .text .chape-one {
-left: 8rem;
+  left: 2rem;
 top: 12rem; 
 }
 .Prices .text .wave {
@@ -1291,7 +1300,9 @@ top: 12rem;
 .landing .hero {
   display: none;
 }
-
+.join-us .container {
+  flex-direction: column;
+}
 .searchToggel.active .search-field {
   bottom: -72px;
   right: -84%;
