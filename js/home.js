@@ -3,7 +3,7 @@ const testimonials = [
 
   {
     id:1, 
-    mainImg:"img/avatar/avatar 1.jpeg",
+    mainImg:"img/avatar/avatar 1.png",
     name:"Eren Yeager",
     year:2013,
     anime:"Attack On Titan",
@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     id:2, 
-    mainImg:"img/avatar/avatar 1.png",
+    mainImg:"img/avatar/avatar 2.jpeg",
     name:"Monkey D. Luffy",
     year:1999,
     anime:"One Piece",
