@@ -234,12 +234,15 @@ color: var(--text-color);
   overflow: hidden;
 }
 .team .text {
-      background-color: var(--divs-color);
+  background-color: var(--divs-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0 262px;
+  padding: 120px 0px 262px;
+  background-size: cover;
+  background-position: right;
   position: relative;
+  background-image: url(../img/shape-08.svg);
 }
 .team .text span {
   position: absolute;
@@ -539,12 +542,12 @@ color: var(--text-color);
   position: relative;
   overflow: hidden;
 }
-#filter-button {
+.portfolio-nav {
   display: flex;
   justify-content: center;
   margin: 30px 0 70px;
 }
-#filter-button ul {
+.portfolio-nav ul {
   display: flex;
   gap: 50px;
   padding: 10px 17px;
@@ -553,11 +556,11 @@ color: var(--text-color);
   background: var(--divs-color);
   border-radius: 50px;
 }
-#filter-button ul li {
+.portfolio-nav ul li {
   transition: 0.3s;
   cursor: pointer;
 }
-#filter-button ul li:hover {
+.portfolio-nav ul li:hover {
   padding: 3px 30px;
   border-radius: 50px;
   background-color: var(--main-color);
@@ -567,11 +570,25 @@ color: var(--text-color);
   display: flex;
   transition: 0.3s;
 }
-#filter-button ul li:hover span {
+.clicked {
+  padding: 3px 30px;
+  border-radius: 50px;
+  background-color: var(--main-color);
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: 0.3s;
+}
+.portfolio-nav ul li:hover {
   color: white;
   transition: 0.3s;
 }
-#filter-button ul span {
+.portfolio-nav ul li.clicked  {
+  color: white;
+  transition: 0.3s;
+}
+.portfolio-nav ul li {
   color: var(--paragraph);
 }
 .filter img {
@@ -639,7 +656,7 @@ color: var(--text-color);
 
 
 .testimonials {
-  padding: 250px 0 150px;
+  padding: 250px 0 200px;
   overflow: hidden;
 }
 .testimonials .text {
@@ -651,14 +668,13 @@ color: var(--text-color);
 .testimonials .card {
   position: relative;
   display: flex;
-  margin-bottom: 209px;
   flex-direction: row;
   padding: 36px 40px;
   gap: 40px;
-      background-color: var(--divs-color);
+  background-color: var(--divs-color);
   align-items: center;
   border: none;
-  width: 99%;
+  width: 98%;
 }
 .testimonials .card::before {
   content: "";
@@ -706,6 +722,7 @@ color: var(--text-color);
   padding: 110px 0;
   background-color: var(--divs-color);
   overflow: hidden;
+  background-image: url(../img/shape-08.svg);
 }
 .states .circel {
   position: absolute;
@@ -827,7 +844,7 @@ color: var(--text-color);
   transform: translate(-50%, -50%);
   text-align: center;
   color: #121212;
-  background: #ffffffa6;
+  background: rgb(255 255 255 / 38%);
   backdrop-filter: blur(3px);
   width: 100%;
   height: 100%;
@@ -975,7 +992,7 @@ color: var(--text-color);
   gap: 10px;
 }
 .form .contact .textarea textarea {
-      background-color: var(--divs-color);
+  background-color: var(--divs-color);
   border: none;
   font-size: 16px;
   padding: 14px 22px;
@@ -1407,7 +1424,7 @@ display: none;
   font-size: 12px;
 }
 .testimonials {
-  padding: 250px 0 5px;
+  padding: 113px 0 131px;
 }
 .testimonials .card p {
   font-size: 18px;
@@ -1423,4 +1440,15 @@ display: none;
 .blogs .card {
   max-width: 100% !important;
   }
+  .portfolio-nav ul {
+    gap: 20px;
+    font-size: 10px;
+} 
+.portfolio-nav ul li:hover {
+  padding: 3px 7px; 
+}
+
+.testimonials .container {
+  padding: 0 14px 0;
+}
 }

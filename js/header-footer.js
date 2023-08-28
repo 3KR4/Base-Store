@@ -31,33 +31,35 @@ mainHeader = () =>{
         <ul class="links">
 
             <li>
-              <a href="#">
-                Features</a>
+            <a href="../blogs-grid.html">
+              Blogs</a>
             </li>
             
             <li>
               <a href="#">
-                Crafted </a>
+                Blogs Single</a>
             </li>
 
             <li>
-              <a href="#">
+              <a href="#team">
+              team</a>
+            </li>
+
+            <li>
+              <a href="#Prices">
+                Pricing</a>
+            </li>
+
+            <li>
+              <a href="#testimonials">
                 Testimonials</a>
             </li>
 
             <li>
-              <a href="#">
-                Pricing</a>
-            </li>
-            
-            <li>
-              <a href="#B">
-                Blogs</a>
-            </li>
-            <li>
-              <a href="#">
+              <a href="#form">
                 contact</a>
             </li>
+
           </ul>
         </div></li>
 

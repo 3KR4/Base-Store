@@ -1,4 +1,14 @@
-                                                                                                                          /*! form */
+.header .darkLight i,
+.header .darkLight span,
+.header .searchToggel i {
+    position: absolute;
+    color: var(--pars-other) ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+                                                                                                        /*! form */
 input {
   color: var(--paragraph);
 }
@@ -216,14 +226,6 @@ input {
 }
 
 
-.header .darkLight i,
-.header .darkLight span,
-.header .searchToggel i {
-    position: absolute;
-    color: var(--pars-other) ;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 
 
 @media (max-width:992px) {

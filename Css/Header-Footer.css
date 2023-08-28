@@ -39,7 +39,7 @@ body.dark {
 }
 /* Custom Scroll Bar */
 html::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.7rem;
 }
 html::-webkit-scrollbar-track {
   background: transparent;

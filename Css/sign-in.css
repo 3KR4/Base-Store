@@ -1,4 +1,14 @@
-                                                                                                                          /*! form */
+.header .darkLight i,
+.header .darkLight span,
+.header .searchToggel i {
+    position: absolute;
+    color: var(--pars-other) ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+                                                                             /*! form */
 
 
 .form {
@@ -212,18 +222,6 @@
     background-color: #f36a8d;
     transition: 0.4s;
 }
-
-
-.header .darkLight i,
-.header .darkLight span,
-.header .searchToggel i {
-    position: absolute;
-    color: var(--pars-other) ;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-
 @media (max-width:992px) {
   .form .container {
     flex-direction: column-reverse;
