@@ -31,7 +31,7 @@ mainHeader = () =>{
         <ul class="links">
 
             <li>
-            <a href="../blogs-grid.html">
+            <a href="blogs-grid.html">
               Blogs</a>
             </li>
             

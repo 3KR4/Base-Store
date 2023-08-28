@@ -3,7 +3,7 @@ const testimonials = [
 
   {
     id:1, 
-    mainImg:"../img/avatar/avatar 1.jpeg",
+    mainImg:"img/avatar/avatar 1.jpeg",
     name:"Eren Yeager",
     year:2013,
     anime:"Attack On Titan",
@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     id:2, 
-    mainImg:"img/avatar/avatar 2.jpeg",
+    mainImg:"img/avatar/avatar 1.png",
     name:"Monkey D. Luffy",
     year:1999,
     anime:"One Piece",
@@ -172,124 +172,124 @@ const filter = [
   // computer
 { 
   class: "all Computer",
-  img:"../img/Filter/pc/pc w  (1).jpg",
+  img:"img/Filter/pc/pc w  (1).jpg",
   title:"Gaming Pc",
 },
 {
   class: "all Computer",
-  img:"../img/Filter/pc/pc w  (2).jpg",
+  img:"img/Filter/pc/pc w  (2).jpg",
   title:"Gaming Pc",
 },
 {
   class: "all Computer",
-  img:"../img/Filter/pc/pc w  (3).jpg",
+  img:"img/Filter/pc/pc w  (3).jpg",
   title:"Gaming Pc",
 },
 
 {
   class: "all Computer",
-  img:"../img/Filter/pc/pc h  (1).jpg",
+  img:"img/Filter/pc/pc h  (1).jpg",
   title:"Gaming Pc",
 },
 {
   class: "all Computer",
-  img:"../img/Filter/pc/pc h  (2).jpg",
+  img:"img/Filter/pc/pc h  (2).jpg",
   title:"Gaming Pc",
 },
 {
   class: "all Macbook",
-  img:"../img/Filter/macbook/Console h (1).jpg",
+  img:"img/Filter/macbook/Console h (1).jpg",
   title:"Macbook",
 },
 // Console
 { 
   class: "all Computer",
-  img:"../img/Filter/pc/pc w  (4).jpg",
+  img:"img/Filter/pc/pc w  (4).jpg",
   title:"Gaming Pc",
 },
 { 
   class: "all Console",
-  img:"../img/Filter/Console/console - w (1).jpg",
+  img:"img/Filter/Console/console - w (1).jpg",
   title:"Play Station",
 },
 {
   class: "all Console",
-  img:"../img/Filter/Console/console - w (2).jpg",
+  img:"img/Filter/Console/console - w (2).jpg",
   title:"Play Station",
 },
 {
   class: "all Console",
-  img:"../img/Filter/Console/console - w (3).jpg",
+  img:"img/Filter/Console/console - w (3).jpg",
   title:"Play Station",
 },
 { 
   class: "all Console",
-  img:"../img/Filter/Console/console - w (4).jpg",
+  img:"img/Filter/Console/console - w (4).jpg",
   title:"Play Station",
 },
 { 
   class: "all Macbook",
-  img:"../img/Filter/macbook/macbook  w  (1).jpg",
+  img:"img/Filter/macbook/macbook  w  (1).jpg",
   title:"Macbook",
 },
 {
   class: "all Console",
-  img:"../img/Filter/Console/console h  (1).jpg",
+  img:"img/Filter/Console/console h  (1).jpg",
   title:"Play Station",
 },
 {
   class: "all Console",
-  img:"../img/Filter/Console/console h  (2).jpg",
+  img:"img/Filter/Console/console h  (2).jpg",
   title:"Play Station",
 },
 {
   class: "all Macbook",
-  img:"../img/Filter/macbook/Console h (2).jpg",
+  img:"img/Filter/macbook/Console h (2).jpg",
   title:"Macbook",
 },
 {
   class: "all Macbook",
-  img:"../img/Filter/macbook/macbook  w  (2).jpg",
+  img:"img/Filter/macbook/macbook  w  (2).jpg",
   title:"Macbook",
 },
 {
   class: "all Macbook",
-  img:"../img/Filter/macbook/macbook  w  (3).jpg",
+  img:"img/Filter/macbook/macbook  w  (3).jpg",
   title:"Macbook",
 },
 { 
   class: "all Macbook",
-  img:"../img/Filter/macbook/macbook  w  (4).jpg",
+  img:"img/Filter/macbook/macbook  w  (4).jpg",
   title:"Macbook",
 },
 { 
   class: "all Mopile",
-  img:"../img/Filter/Mobile/Mobile  (1).jpg",
+  img:"img/Filter/Mobile/Mobile  (1).jpg",
   title:"Mopile",
 },
 {
   class: "all Mopile",
-  img:"../img/Filter/Mobile/Mobile  (2).jpg",
+  img:"img/Filter/Mobile/Mobile  (2).jpg",
   title:"Mopile",
 },
 {
   class: "all Mopile",
-  img:"../img/Filter/Mobile/Mobile  (3).jpg",
+  img:"img/Filter/Mobile/Mobile  (3).jpg",
   title:"Mopile",
 },
 { 
   class: "all Mopile",
-  img:"../img/Filter/Mobile/Mobile  (4).jpg",
+  img:"img/Filter/Mobile/Mobile  (4).jpg",
   title:"Mopile",
 },
 {
   class: "all Mopile",
-  img:"../img/Filter/Mobile/Mobile  (5).png",
+  img:"img/Filter/Mobile/Mobile  (5).png",
   title:"Mopile",
 },
 {
   class: "all Mopile",
-  img:"../img/Filter/Mobile/Mobile  (6).jpg",
+  img:"img/Filter/Mobile/Mobile  (6).jpg",
   title:"Mopile",
 },
 ]
