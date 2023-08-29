@@ -59,6 +59,10 @@ mainHeader = () =>{
               <a href="#form">
                 contact</a>
             </li>
+            <li>
+              <a href="error.html">
+                Error 404</a>
+            </li>
 
           </ul>
         </div></li>
