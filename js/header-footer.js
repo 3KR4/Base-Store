@@ -11,7 +11,7 @@ mainHeader = () =>{
   <div class="container">
   <div class="logo">
     <img src="img/logo.png" alt="">
-    <H1>Base</H1>
+    <a href="index.html"><H1>Base</H1></a>
   </div>
 
   <div class="menu">
