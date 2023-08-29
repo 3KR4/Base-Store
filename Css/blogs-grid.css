@@ -15,7 +15,6 @@
   margin-top: 45px;
 }
 .blogs .container .row {
-  gap: 20px;
 }
 .blogs .container .card {
   display: flex;
@@ -23,6 +22,7 @@
   border: none;
   background-color: var(--divs-color);
   padding: 0;
+  margin-bottom: 30px;
 }
 .blogs .card .img-holder {
   position: relative;
@@ -116,21 +116,9 @@
   .blogs .card .img-holder img {
     min-width: 100%;
   }
-  .blogs .container .card {
-    max-width: 31%;
-  }
 }
-@media (max-width:1400px) {
-.blogs .container .card {
-  max-width: 31%;
-  }
-}
-@media (max-width:992px) {
-  .blogs .container .cards {
-    gap: 0 !important;
-  }
-  .blogs .card {
-    margin: 41px 24px 0 0 !important;
-    max-width: 46% !important;
+@media (max-width:786px) {
+  .blogs .card .img-holder img {
+    min-width: 100%;
   }
 }
