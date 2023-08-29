@@ -43,3 +43,9 @@
   color: white;
   font-weight: 500;
 }
+
+@media (max-width:786px) {
+  .error .container h3 {
+    text-align: center;
+  }
+}
