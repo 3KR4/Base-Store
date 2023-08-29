@@ -487,12 +487,24 @@ input {
   color: var(--main-color);
   transition: 0.3s;
 }
+
+.footer .main .newsletter .input-holder {
+  position: relative;
+}
 .footer .main .newsletter input {
   background-color: var(--divs-color);
   border: 1px solid var(--paragraph);
   border-radius: 50px;
   margin-top: 18px;
-  padding: 12px 7px;
+  padding: 12px 21px;
+  width: 100%;
+}
+.footer .main .newsletter .input-holder i {
+  position: absolute;
+  top: 51%;
+  right: 8%;
+  color: var(--paragraph);
+  font-size: 16px;
 }
 .footer hr {
   color: var(--text-color);

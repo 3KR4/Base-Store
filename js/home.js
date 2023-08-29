@@ -58,7 +58,6 @@ const testimonials = [
     img:"img/dropcom.png"
   }
   ];
-  
   let testCards = document.querySelector(".testimonials .cards .mySwiper  .swiper-wrapper ")
   function rednderTestimonials() {
   let testItems = testimonials.map((item) => {
@@ -103,9 +102,6 @@ const blogs = [
   img:"img/blog-03.png"
 },
 ]
-
-
-
 let blogCards = document.querySelector(".blogs .cards")
 function rednderblogs() {
 let blogItems = blogs.map((item) => {
@@ -128,7 +124,6 @@ let blogItems = blogs.map((item) => {
 blogCards.innerHTML = blogItems
 }
 rednderblogs();
-
 
                                                             //! Filter
 

@@ -36,7 +36,7 @@ mainHeader = () =>{
             </li>
             
             <li>
-              <a href="#">
+              <a href="blogs-single.html">
                 Blogs Single</a>
             </li>
 
@@ -88,8 +88,7 @@ clear_day
     </div>
     <a href="sign-up.html">Sign In</a>
   </div>
-
-</div>
+  </div>
   `
 }
 mainHeader() 
@@ -168,7 +167,10 @@ mainFooter = () =>{
       <div class="newsletter">
         <h1>Newsletter</h1>
         <p>Subscribe to receive future updates</p>
+        <div class="input-holder">
         <input type="text" placeholder="Email address">
+        <i class="fa-regular fa-envelope"></i>
+      </div>
       </div>
   </div>
   <hr>

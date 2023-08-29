@@ -1,0 +1,238 @@
+.header .darkLight i,
+.header .darkLight span,
+.header .searchToggel i {
+    position: absolute;
+    color: var(--pars-other) ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+                                                                   /*! blogs */
+
+.blogs {
+    padding: 220px 0 130px;
+}
+.blogs .container {
+  display: flex;
+  gap: 60px;
+}
+.blogs h2 {
+  color: var(--text-color);
+  font-size: 38px;
+  font-weight: 600;
+  margin: 35px 0 10px;
+}
+.blogs p {
+  color: var(--paragraph);
+  margin-bottom: 30px;
+}
+.blogs .main {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+.blogs  img {
+  max-width: 100%;
+  border-radius: 9px;
+}
+.blogs .main .Events {
+  display: flex;
+  gap: 50px;
+  margin: 10px 0 5px;
+}
+.blogs .main .Events div h4 {
+  color: var(--text-color);
+  font-size: 16px;
+}
+.blogs .main .Events div p {
+  font-weight: 500;
+}
+.blogs .images {
+  display: flex;
+  gap: 40px;
+  margin: 12px 0 0px;
+}
+.blogs .images img {
+  max-width: 48%;
+}
+.blogs .social {
+  display: flex;
+  color: var(--text-color);
+  gap: 20px;
+  align-items: center;
+  margin-top: 6px;
+}
+.blogs .social .icons {
+  display: flex;
+  gap: 12px;
+}
+.blogs .social .icons i {
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.blogs .social .icons .facebook {
+  background-color: #2f4f8a;
+}
+.blogs .social .icons .twitter {
+  background-color: #0097ea;
+}
+.blogs .social .icons .discord {
+  background-color: #4e6bff;
+}
+.blogs .social .icons .pinterest {
+  background-color: #c01020;
+}
+.blogs .side .input-holder {
+  position: relative;
+}
+.blogs .side input {
+  background-color: var(--divs-color);
+  border: 1px solid var(--paragraph);
+  border-radius: 50px;
+  margin-top: 18px;
+  padding: 16px 25px;
+  width: 100%;
+}
+.blogs .side .input-holder i {
+  position: absolute;
+  top: 51%;
+  right: 8%;
+  color: var(--paragraph);
+  font-size: 16px;
+}
+.blogs .side input {
+  background-color: var(--divs-color);
+  border: 1px solid var(--paragraph);
+  border-radius: 50px;
+  margin-top: 18px;
+  padding: 16px 25px;
+  width: 100%;
+}
+.blogs .side h3 {
+  color: var(--text-color);
+  font-size: 24px;
+  margin: 40px 0 30px;
+}
+.blogs .side .posts h3 {
+  color: var(--text-color);
+  font-size: 24px;
+  margin: 40px 0 30px;
+  font-size: 18px;
+}
+.blogs .side ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.blogs .side ul li {
+  color: var(--paragraph);
+}
+.blogs .side .posts {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: -15px;
+}
+.blogs .side .posts img {
+  border-radius: 0px;
+  width: 85px;
+}
+
+                                                            /*! join-us */
+
+.join-us {
+  padding: 70px 0;
+  background-color: var(--main-color);
+  overflow: hidden;
+}
+.join-us .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.join-us .description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+.join-us .description h3 {
+  font-size: 45px;
+  font-weight: 700;
+  max-width: 590px;
+}
+.join-us .description p {
+  max-width: 714px;
+  line-height: 1.9;
+}
+.join-us a {
+  padding: 11px 47px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: #495057;
+  font-weight: 600;
+  align-self: center;
+  margin: 25px 0;
+  transition: 0.4s;
+}
+.join-us a:hover {
+  background-color: #f36a8d;
+  transition: 0.4s;
+}
+
+
+
+
+
+
+
+@media (max-width:992px) {
+  .blogs .container {
+    flex-direction: column;
+  }
+  .blogs .main {
+    min-width: 100%;
+  }
+  .blogs {
+    padding: 160px 0 130px;
+  } 
+  .blogs .side input {
+    width: 40%;
+  }
+  .blogs .side .input-holder i {
+    right: 63%;
+  }
+  .join-us .description h3 {
+    font-size: 30px; 
+  }
+  .join-us .container {
+    flex-direction: column;
+  }
+  .blogs .images {
+    flex-direction: column;
+} 
+.blogs .images img {
+  max-width: 100%; 
+}
+.blogs h2 {
+  font-size: 30px; 
+}
+}
+
+@media (max-width:786px) {
+  .blogs .side input {
+    width: 100%; 
+  }
+  .blogs .side .input-holder i {
+    right: 6%; 
+  }
+  .blogs .container {
+    gap: 15px;
+} 
+}

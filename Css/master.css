@@ -715,7 +715,7 @@ color: var(--text-color);
   height: 29px;
 }
 
-                                                        /*! states */
+                                                                                                       /*! states */
 
 .states {
   position: relative;
@@ -1300,6 +1300,9 @@ top: 12rem;
 .form .contact .input .email input {
   width: 200%;
 }
+.join-us .description h3 {
+  font-size: 30px; 
+}
 }
 
                                                                                 /*! small */
@@ -1359,7 +1362,6 @@ font-size: 19px;
 .search-field::before {
   display: none;
 }
-
 
 .choose-us {
   padding-top: 0;
@@ -1447,8 +1449,10 @@ display: none;
 .portfolio-nav ul li:hover {
   padding: 3px 7px; 
 }
-
 .testimonials .container {
   padding: 0 14px 0;
+}
+.join-us .container {
+  flex-direction: column;
 }
 }
