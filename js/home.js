@@ -36,7 +36,7 @@ const testimonials = [
   {
     id:5, 
     mainImg:"img/avatar/avatar 5.jpeg",
-    name:"Senkur",
+    name:"Senku",
     year:2019,
     anime:"Dr.Stone",
     img:"img/dropcom.png"
@@ -124,6 +124,38 @@ let blogItems = blogs.map((item) => {
 blogCards.innerHTML = blogItems
 }
 rednderblogs();
+
+                                                            //! checkbox
+function check() {
+  const checkbox = document.querySelector(".checkbox")
+  const priceOne = document.querySelector(".priceOne")
+  const priceTwo = document.querySelector(".priceTwo")
+  const pricethere = document.querySelector(".pricethere")
+    if (checkbox.checked == true) {
+      priceOne.innerHTML = "<div><h3>$149</h3>/per year</div>"
+      priceTwo.innerHTML = "<div><h3>$608</h3>/per year</div>"
+      pricethere.innerHTML = "<div><h3>$1568</h3>/per year</div>"
+    } else {
+      priceOne.innerHTML = "<div><h3>$29</h3>/per month</div>"
+      priceTwo.innerHTML = "<div><h3>$59</h3>/per month</div>"
+      pricethere.innerHTML = "<div><h3>$139</h3>/per month</div>" 
+    };
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                                             //! Filter
 
