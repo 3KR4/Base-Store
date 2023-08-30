@@ -96,11 +96,12 @@ clear_day
   `
 }
 mainHeader() 
-let body         = document.querySelector("body"),
-    nav          = document.querySelector(".header"),
-    modeToggle   = document.querySelector(".darkLight"),
-    searchToggle = document.querySelector(".searchToggel");    
-let getMode = localStorage.getItem("mode");
+let body         = document.querySelector("body")
+    nav          = document.querySelector(".header")
+    modeToggle   = document.querySelector(".darkLight")
+    searchToggle = document.querySelector(".searchToggel")
+
+let getMode = localStorage.getItem("mode")
       if(getMode && getMode === "dark-mode"){
         body.classList.add("dark");
       }
@@ -116,6 +117,35 @@ let getMode = localStorage.getItem("mode");
   searchToggle.addEventListener("click" , () =>{
     searchToggle.classList.toggle("active")
   })
+
+    bars     = document.querySelector(".bars") 
+    navLinks = document.querySelector(".nav-links")
+    lastLi   = document.querySelector(".pages")
+    megaMenu = document.querySelector(".mega-menu")
+    
+    lastLi.onclick = function() {
+      megaMenu.classList.toggle("viewTwo")
+    }
+    bars.onclick = function() {
+      navLinks.classList.toggle("view")
+    }
+    window.onclick = function(event) {
+      if (!event.target.matches(".bars")) {
+        let navLinks = document.querySelector(".nav-links")
+        if (navLinks.classList.contains("view")) {
+          navLinks.classList.remove("view")
+        };
+      };
+    };
+    window.onclick = function(event) {
+      if (!event.target.matches(".pages")) {
+        let megaMenu = document.querySelector(".mega-menu")
+        if (megaMenu.classList.contains("viewTwo")) {
+          megaMenu.classList.remove("viewTwo")
+        };
+      };
+    };
+
   window.addEventListener("scroll", function() {
     let header = document.querySelector(".header");
     header.classList.toggle("sticky", window.scrollY > 0);});

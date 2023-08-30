@@ -142,21 +142,6 @@ function check() {
     };
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                                             //! Filter
 
 const btns = [
