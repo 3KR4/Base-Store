@@ -247,11 +247,11 @@ input {
     opacity: 0;
     pointer-events: none;
 }
-.header .searchToggel.active i.cancel {
+.header .searchToggel .search-field.active i.cancel {
     opacity: 1;
     pointer-events: auto;
 }
-.header .searchToggel.active i.search {
+.header .searchToggel .search-field.active i.search {
     opacity: 0;
     pointer-events: none;
 }
@@ -274,15 +274,10 @@ input {
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.searchToggel.active .search-field {
-    bottom: -55px;
-    opacity: 1;
-    pointer-events: auto; 
-}
-.searchToggel.active .search-field {
-    bottom: -55px;
-    opacity: 1;
-    pointer-events: auto; 
+.searchToggel .search-field.active {
+  bottom: -70px;
+  opacity: 1;
+  pointer-events: auto;
 }
 .search-field::before {
     content: "";
@@ -313,6 +308,9 @@ input {
     right: 15px;
     font-size: 22px;
     cursor: pointer;
+}
+.search-field .search2 {
+  color: var(--search-icon);
 }
 .header.sticky {
   background-color: var(--search-bar);
@@ -577,6 +575,13 @@ input {
     bottom: -72px;
     right: -84%;
   }
+  .searchBox .search-field {
+    right: -26px;
+  }
+  .search-field::before {
+    display: none;
+  }
+  
   .user {
     color: var(--text-color);
     position: absolute;
@@ -599,7 +604,7 @@ input {
   }
   .header .darkLight i,
   .header .darkLight span,
-  .header .searchToggel i,
+  .search,
   .header .bars,
   .header .xClose {
     color: var(--text-color) !important;

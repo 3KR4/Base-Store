@@ -294,10 +294,9 @@ color: var(--text-color);
 }
 .team .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
   gap: 40px;
-  padding: 100px 50px 1000px;
-  padding: 100px 50px 100px;
+  padding: 100px 20px 100px;
   margin-top: -280px;
 }
 .team .cards .card {
@@ -1366,14 +1365,6 @@ font-size: 19px;
 .section1 .holder .whatsapp {
   height: 81px;
 }
-
-.searchBox .search-field {
-  right: -26px;
-}
-.search-field::before {
-  display: none;
-}
-
 .choose-us {
   padding-top: 0;
 }

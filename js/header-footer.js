@@ -24,7 +24,7 @@ mainHeader = () =>{
     </div>
     <ul class="nav-links">
       <li><a class="active" href="index.html">home</a></li>
-      <li><a href="about.html">about</a></li>
+      <li><a href="">about</a></li>
       <li><a href="#">features</a></li>
       <li><a href="#">support</a></li>
       <li><span class="pages">Pages</span>
@@ -88,7 +88,7 @@ clear_day
           <i class='bx bx-search-alt-2 search'></i>
           <div class="search-field">
             <input type="text" placeholder="Search...">
-            <i class='bx bx-search-alt-2'></i>
+            <i class='bx bx-search-alt-2 search2'></i>
           </div>
         </div>
       </div>
@@ -102,7 +102,8 @@ mainHeader()
 let body         = document.querySelector("body")
     nav          = document.querySelector(".header")
     modeToggle   = document.querySelector(".darkLight")
-    searchToggle = document.querySelector(".searchToggel")
+    searchToggle = document.querySelector(".search")
+    searchInput = document.querySelector(".searchToggel .search-field")
 
 let getMode = localStorage.getItem("mode")
       if(getMode && getMode === "dark-mode"){
@@ -118,11 +119,11 @@ let getMode = localStorage.getItem("mode")
     }
   })
   searchToggle.addEventListener("click" , () =>{
-    searchToggle.classList.toggle("active")
+    searchInput.classList.toggle("active")
   })
 
     bars     = document.querySelector(".bars") 
-    xClose     = document.querySelector(".xClose") 
+    xClose   = document.querySelector(".xClose") 
     navLinks = document.querySelector(".nav-links")
     lastLi   = document.querySelector(".pages")
     megaMenu = document.querySelector(".mega-menu")
