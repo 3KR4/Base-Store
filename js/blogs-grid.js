@@ -20,9 +20,6 @@ const blogs = [
   img:"img/blog-06.jpg"
 },
 ]
-
-
-
 let blogCards = document.querySelector(".blogs .cards")
 function rednderblogs() {
 let blogItems = blogs.map((item) => {

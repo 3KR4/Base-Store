@@ -216,6 +216,33 @@ input {
     opacity: 0;
     pointer-events: none;
 }
+
+
+
+
+
+.header .xClose {
+    opacity: 0;
+    pointer-events: none;
+}
+.header .xClose.viewss {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+.header i.bars.viewss  {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
 .header .searchToggel i.cancel {
     opacity: 0;
     pointer-events: none;
@@ -313,7 +340,8 @@ input {
 
 
 @media (min-width:993px) {
-  .bars {
+  .bars,
+  .xClose {
     display: none !important;
 }
   .user {
@@ -347,7 +375,8 @@ input {
   .header .darkLight, .header .searchToggel {
   width: 24px;
   }
-  .bars {
+  .bars,
+  .xClose {
     display: block;
     margin-left: 8px;
     position: absolute;
@@ -358,6 +387,10 @@ input {
     transition: 0.3s;
   }
   .header.sticky .bars {
+    color: var(--text-color);
+    top: 35px;
+  }
+  .header.sticky .xClose {
     color: var(--text-color);
     top: 35px;
   }
@@ -413,6 +446,10 @@ input {
 
 @media (max-width:786px) {
   .header.sticky .bars {
+    color: var(--text-color);
+    top: 37px !important;
+}
+  .header.sticky .xClose {
     color: var(--text-color);
     top: 37px !important;
 }
@@ -547,7 +584,8 @@ input {
     right: 47px !important;
     font-size: 18px;
   }
-  .bars {
+  .bars,
+  .xClose {
     right: 15px !important;
   }  
   .header .darkLight,
@@ -559,13 +597,11 @@ input {
     right: 72px;
     top: 30px;
   }
-  .header .menu .bars:hover + .nav-links {
-    display: flex;
-  }
   .header .darkLight i,
   .header .darkLight span,
   .header .searchToggel i,
-  .header .bars {
+  .header .bars,
+  .header .xClose {
     color: var(--text-color) !important;
   }
   .header .holder a {

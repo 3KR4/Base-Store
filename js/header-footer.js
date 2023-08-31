@@ -18,7 +18,10 @@ mainHeader = () =>{
     <a href="sign-up.html">
       <i class="fa-regular fa-user user"></i>
     </a>
+    <div class="barBtn">
     <i class="fa-solid fa-bars bars"></i>
+    <i class="fa-solid fa-xmark xClose"></i>
+    </div>
     <ul class="nav-links">
       <li><a class="active" href="index.html">home</a></li>
       <li><a href="about.html">about</a></li>
@@ -119,6 +122,7 @@ let getMode = localStorage.getItem("mode")
   })
 
     bars     = document.querySelector(".bars") 
+    xClose     = document.querySelector(".xClose") 
     navLinks = document.querySelector(".nav-links")
     lastLi   = document.querySelector(".pages")
     megaMenu = document.querySelector(".mega-menu")
@@ -128,15 +132,14 @@ let getMode = localStorage.getItem("mode")
     }
     bars.onclick = function() {
       navLinks.classList.toggle("view")
+      xClose.classList.add("viewss")
+      bars.classList.toggle("viewss")
     }
-    window.onclick = function(event) {
-      if (!event.target.matches(".bars")) {
-        let navLinks = document.querySelector(".nav-links")
-        if (navLinks.classList.contains("view")) {
-          navLinks.classList.remove("view")
-        };
-      };
-    };
+    xClose.onclick = function() {
+      navLinks.classList.remove("view")
+      xClose.classList.remove("viewss")
+      bars.classList.toggle("viewss")
+    }
     window.onclick = function(event) {
       if (!event.target.matches(".pages")) {
         let megaMenu = document.querySelector(".mega-menu")
