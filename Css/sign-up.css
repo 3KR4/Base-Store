@@ -190,13 +190,15 @@ input {
 .form .contact .input .name input:focus {
   border: 1px solid #4a6cf7;
 }
-.form .contact .input .email {
+.form .contact .input .email,
+.form .contact .input .Password {
   display: flex;
   flex-direction: column;
   gap: 8px;
   width: 90%;
 }
-.form .contact .input .email input {
+.form .contact .input .email input,
+.form .contact .input .Password input {
   padding: 13px 15px;
   border: 1px solid #5c5c5c;
   border-radius: 7px;
@@ -204,8 +206,19 @@ input {
   outline: none;
   background-color: transparent;
 }
-.form .contact .input .email input:focus {
+.form .contact .input .email input:focus,
+.form .contact .input .Password input:focus {
   border: 1px solid #4a6cf7;
+}
+.form .contact .input .Password {
+  position: relative;
+}
+.show-hide {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  font-size: 20px;
+  color: var(--paragraph);
 }
 .form .contact .signUb {
   padding: 11px 47px;

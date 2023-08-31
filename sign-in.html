@@ -53,9 +53,10 @@
               <label for="">Username</label>
               <input type="text" placeholder="Enter Your Name">
             </div>
-            <div class="email">
+            <div class="Password">
               <label for="">Password</label>
-              <input type="text" placeholder="****************">
+              <input type="password" placeholder="Enter Your Password">
+              <i class="bx bx-hide show-hide"></i>
             </div>
           </div>
           <a class="signUb" href="">Sign In</a>
@@ -73,7 +74,21 @@
   </script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/header-footer.js"></script>
-<script src="js/home.js"></script>
+<script>
+  const eye = document.querySelectorAll(".show-hide")
+  eye.forEach((eye) => {
+    eye.addEventListener("click" , () => {
+      const passInbut = eye.parentElement.querySelector("input");
+      if (passInbut.type === "password") {
+        eye.classList.replace("bx-hide", "bx-show")
+        return (passInbut.type = "text");
+      }else {
+        eye.classList.replace("bx-show", "bx-hide");
+        passInbut.type = "password"
+      };
+    });
+  });
+</script>
 </body>
 </html>
 
