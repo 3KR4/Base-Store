@@ -301,6 +301,7 @@ input {
   font-size: 18px;
   color: var(--search-text);
   background-color: var(--search-bar);
+  font-weight: 300;
 }
 .search-field i {
     position: absolute;
