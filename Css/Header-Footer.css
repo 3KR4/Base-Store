@@ -412,7 +412,7 @@ input {
     border-radius: 7px;
   }
   .view {
-    display: flex;
+    display: flex !important;
     left: 27px;
   }
   .mega-menu {

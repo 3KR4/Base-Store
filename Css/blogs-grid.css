@@ -7,29 +7,24 @@
     transition: all 0.3s ease;
 }
                                                                                   /*! blogs */
-.blogs {
+.blog-grid {
   padding: 200px 0 0;
   overflow: hidden;
 }
-.blogs .container {
-  margin-top: 45px;
+.blog-grid .cards {
+  gap: 25px;
 }
-.blogs .container .card {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  background-color: var(--divs-color);
+.blog-grid .card {
+  background: var(--divs-color);
   padding: 0;
-  margin-bottom: 30px;
+  width: 23%;
+  border: none;
 }
-.blogs .card .img-holder {
+.blog-grid .card .image {
   position: relative;
   overflow: hidden;
 }
-.blogs .card .img-holder img {
-  max-width: 100%;
-}
-.blogs .card .img-holder div {
+.blog-grid .card .image div {
   position: absolute;
   top: 152%;
   left: 50%;
@@ -43,13 +38,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.5s;
+  transition: 0.4s;
 }
-.blogs .img-holder:hover .animation {
+.blog-grid .image:hover div {
   top: 50%;
   transition: 0.5s;
 }
-.blogs .card .img-holder div a {
+.blog-grid .card .image div a {
   padding: 11px 47px;
   border-radius: 50px;
   background-color: var(--main-color);
@@ -58,56 +53,98 @@
   align-self: center;
   margin: 25px 0;
 }
-.blogs .card .img-holder div a:hover {
-    background-color: #f36a8d;
-    transition: 0.4s;
+.blog-grid .card .image div a:hover {
+  background-color: #f36a8d;
+  transition: 0.4s;
 }
-.blogs .card .info {
-  padding: 30px;
+.blog-grid .card .image img {
+  width: 100%;
+}
+.blog-grid .card .info {
+  padding: 25px;
+  color: white;
+}
+.blog-grid .card .head {
   display: flex;
+  justify-content: space-between;
+  color: var(--text-color);
+  margin-bottom: 10px;
   flex-direction: column;
-  gap: 20px;
-}
-.blogs .card .users {
-  color: var(--paragraph);
-  display: flex;
-  gap: 30px;
-}
-.blogs .card .users span {
-  color: var(--text-color);
-}
-.blogs .card .users span i {
-  color: var(--text-color);
-}
-.blogs .card h3 {
-  color: var(--text-color);
-  font-size: 23px;
-  font-weight: 700;
-}
-.blogs .container .numpers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px 0 100px;
-}
-.blogs .container .numpers ul {
-  display: flex;
   gap: 10px;
 }
-.blogs .container .numpers li {
-  color: var(--paragraph);
-  background-color: var(--divs-color);
-  padding: 6px 13px;
-  border-radius: 50px;
-  transition: 0.3s;
+.blog-grid .card .head p {
+  font-size: 20px;
+  text-transform: capitalize;
 }
-.blogs .container .numpers li:hover {
+.blog-grid .card h2 {
+  font-size: 18px;
+  color: var(--paragraph);
+}
+.year-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.year-holder span {
+  font-size: 18px;
+}
+
+
+.pagination {
+  padding: 70px 0 100px;
+}
+.pagination .container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.pagination .container .links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.pagination .container .links .active {
   color: white;
   background-color: var(--main-color);
-  padding: 6px 13px;
   border-radius: 50px;
   transition: 0.3s;
 }
+.pagination .container .links a {
+  color: var(--paragraph);
+  background-color: var(--divs-color);
+  padding: 5px 14px;
+  border-radius: 50px;
+  transition: 0.3s;
+  border: none;
+  font-size: 20px;
+}
+.pagination .container .button:hover, .pagination .container .link:hover {
+  background-color: #4070f4;
+  color: #fff; 
+}
+.pagination .container .button {
+  color: var(--paragraph);
+  background-color: var(--divs-color);
+  padding: 5px 14px;
+  border-radius: 50px;
+  transition: 0.3s;
+  border: none;
+}
+.pagination .container .button:disabled {
+  color: #b3b3b3;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
                                                            /*! join-us */
 
 .join-us {
@@ -155,6 +192,11 @@
     min-width: 100%;
   }
 }
+@media (max-width:1200px) { 
+  .blog-grid .card {
+    width: 31%; 
+  } 
+}
 @media (max-width:992px) { 
   .join-us .description h3 {
     font-size: 30px; 
@@ -162,9 +204,15 @@
   .join-us .container {
     flex-direction: column;
   }
+  .blog-grid .card {
+    width: 48%; 
+  }
 }
 @media (max-width:786px) {
   .blogs .card .img-holder img {
     min-width: 100%;
+  }
+  .blog-grid .card {
+    width: 100%; 
   }
 }

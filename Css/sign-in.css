@@ -250,6 +250,9 @@ p.error-text {
   .form .container {
     flex-direction: column-reverse;
   }
+  .form .contact {
+    padding: 46px 26px !important;
+  }
   .form .contact .input {
     flex-direction: column;
   }
@@ -273,6 +276,9 @@ p.error-text {
     padding: 20px 0 33px;
     gap: 20px;
     border-radius: 7px;
+}
+.mega-menu {
+  background-color: var(--body-color) !important; 
 }
 .user {
   color: var(--text-color);

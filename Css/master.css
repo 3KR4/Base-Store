@@ -833,7 +833,7 @@ color: var(--text-color);
   display: flex;
   flex-direction: column;
   border: none;
-      background-color: var(--divs-color);
+  background-color: var(--divs-color);
   padding: 0;
 }
 .blogs .card .img-holder {
