@@ -198,21 +198,6 @@ const filter = [
   title:"Gaming Pc",
 },
 
-{
-  class: "all Computer",
-  img:"img/Filter/pc/pc h  (1).jpg",
-  title:"Gaming Pc",
-},
-{
-  class: "all Computer",
-  img:"img/Filter/pc/pc h  (2).jpg",
-  title:"Gaming Pc",
-},
-{
-  class: "all Macbook",
-  img:"img/Filter/macbook/Console h (1).jpg",
-  title:"Macbook",
-},
 // Console
 { 
   class: "all Computer",
@@ -242,21 +227,6 @@ const filter = [
 { 
   class: "all Macbook",
   img:"img/Filter/macbook/macbook  w  (1).jpg",
-  title:"Macbook",
-},
-{
-  class: "all Console",
-  img:"img/Filter/Console/console h  (1).jpg",
-  title:"Play Station",
-},
-{
-  class: "all Console",
-  img:"img/Filter/Console/console h  (2).jpg",
-  title:"Play Station",
-},
-{
-  class: "all Macbook",
-  img:"img/Filter/macbook/Console h (2).jpg",
   title:"Macbook",
 },
 {
@@ -296,7 +266,7 @@ const filter = [
 },
 {
   class: "all Mopile",
-  img:"img/Filter/Mobile/Mobile  (5).png",
+  img:"/img/Filter/Mobile/Mobile  (5).jpg",
   title:"Mopile",
 },
 {
