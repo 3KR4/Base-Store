@@ -1,3 +1,4 @@
+
                                                                 //! Header
   // <div class="header">
   //   <nav>
@@ -149,6 +150,24 @@ let getMode = localStorage.getItem("mode")
         };
       };
     };
+
+
+                                                                //! scrollBar
+const scrollBar = document.querySelector(".scrollBar")
+window.onscroll = function() {
+  if (window.scrollY >= 200) {
+    scrollBar.style.display = "block";
+  } else {
+    scrollBar.style.display = "none";
+  };
+};
+scrollBar.onclick = function() {
+  window.scrollTo({
+    left: 0,
+    top: 0,
+    behavior: "smooth",
+  });
+};
 
   window.addEventListener("scroll", function() {
     let header = document.querySelector(".header");

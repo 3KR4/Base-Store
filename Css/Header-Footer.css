@@ -65,6 +65,20 @@ ul {
 input {
   color: var(--paragraph);
 }
+.scrollBar {
+  background: var(--main-color);
+  font-size: 30px;
+  color: white;
+  padding: 2px 12px;
+  position: fixed;
+  right: 2%;
+  bottom: 4%;
+  z-index: 200;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer !important;
+  display: none;
+}
 
                                                                               /*! Header */
 
