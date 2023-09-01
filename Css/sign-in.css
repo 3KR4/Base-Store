@@ -8,8 +8,10 @@
 }
 
 
-                                                                             /*! form */
-
+                                                                                                        /*! form */
+input {
+  color: var(--paragraph);
+}
 
 .form {
   padding: 235px 10px 120px;
@@ -78,7 +80,6 @@
 }
 .form p {
   color: var(--paragraph);
-  margin-bottom: 29px;
   letter-spacing: 0.2px;
 }
 .form .icons {
@@ -157,46 +158,24 @@
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
 }
-.form .contact .input {
-  display: flex;
-  gap: 35px;
-  flex-direction: column;
-  align-items: center;
-}
-.form .contact .input .input {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.form .contact .input .name {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 90%;
-}
-.form .contact .input .name input {
-  padding: 13px 15px;
-  border: 1px solid #5c5c5c;
-  border-radius: 7px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 14px;
-  outline: none;
-  background-color: transparent;
-}
-.form label {
+label {
   text-align: left;
 }
-.form .contact .input .name input:focus {
-  border: 1px solid #4a6cf7;
-}
-.form .contact .input .email,
-.form .contact .input .Password {
+form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 90%;
+  gap: 30px;
 }
-.form .contact .input .email input,
-.form .contact .input .Password input {
+.input-field input:focus {
+  border: 1px solid #4a6cf7;
+}
+form .input-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+gap: 10px;
+}
+.input-field input {
   padding: 13px 15px;
   border: 1px solid #5c5c5c;
   border-radius: 7px;
@@ -204,37 +183,69 @@
   outline: none;
   background-color: transparent;
 }
-.form .contact .input .email input:focus,
-.form .contact .input .Password input:focus {
-  border: 1px solid #4a6cf7;
-}
-.form .contact .input .Password {
-  position: relative;
-}
-.show-hide {
+.input-field .show-hide {
   position: absolute;
-  bottom: 15px;
-  right: 10px;
-  font-size: 20px;
-  color: var(--paragraph);
+  right: 13px;
+  top: 51px;
+  font-size: 19px;
+  color: #919191;
+  cursor: pointer;
 }
-.form .contact .signUb {
-  padding: 11px 47px;
-  border-radius: 50px;
-  background-color: var(--main-color);
-  color: white;
-  font-weight: 600;
-  align-self: center;
-  margin: 31px 0 10px;
-  width: 90%;
-  justify-content: center;
+.field .error {
   display: flex;
-  transition: 0.4s;
+  align-items: center;
+  margin-top: 6px;
+  color: #d93025;
+  font-size: 13px;
+  display: none;
 }
-.form .contact .signUb:hover {
-    background-color: #f36a8d;
-    transition: 0.4s;
+p.error-text {
+  color: #d93025;
+  text-align: left;
+  font-size: 14px;
 }
+.invalid .error {
+  display: flex;
+}
+.error .error-icon {
+  margin-right: 6px;
+  font-size: 15px;
+}
+.create-password .error {
+  align-items: flex-start;
+}
+.create-password .error-icon {
+  margin-top: 4px;
+}
+.button {
+  margin-top: 8px;
+}
+.button input {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--main-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+.button input:hover {
+  background-color: #f36a8d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:992px) {
   .form .container {
     flex-direction: column-reverse;
@@ -262,5 +273,11 @@
     padding: 20px 0 33px;
     gap: 20px;
     border-radius: 7px;
+}
+.user {
+  color: var(--text-color);
+}
+.bars {
+  color: var(--text-color);
 }
 }

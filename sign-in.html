@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/bootstrap.min.css">
-    <link rel="stylesheet" href="Css/all.min.css">
-    <link rel="stylesheet" href="Css/Header-Footer.css">
-    <link rel="stylesheet" href="Css/sign-in.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.xyz/npm/swiper@10/swiper-bundle.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <title>Base Store</title>
-  </head>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Css/bootstrap.min.css">
+	<link rel="stylesheet" href="Css/all.min.css">
+  <link rel="stylesheet" href="Css/Header-Footer.css">
+	<link rel="stylesheet" href="Css/sign-in.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.xyz/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<title>Base Store</title>
+</head>
 <body>
-
   <div class="header">
     <nav>
 
@@ -33,9 +32,9 @@
       <div class="contact col-12 col-md-8 col-lg-4" data-aos="fade-down"
       data-aos-anchor-placement="top-bottom" data-aos-duration="1800">
         <div class="border-tops"></div>
-        <h2>Create an Account</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur</p>
-        <h3>Sign up with Social Media</h3>
+        <h2>Useing an Account</h2>
+        <p style="margin-bottom: 28px;">Lorem ipsum dolor sit amet, consectetur</p>
+        <h3>Sign in with Social Media</h3>
         <div class="icons">
           <a class="googeA" href="#"><img class="google" src="img/google.png" alt=""></a>
           <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
@@ -44,23 +43,46 @@
         </div>
         <div class="hr">
           <span></span>
-          <p>Or, sign up with your email</p>
+          <p>Or, sign in with your email</p>
           <span></span>
         </div>
         <span class="shape-two"></span>
-          <div class="input">
-            <div class="name">
-              <label for="">Username</label>
-              <input type="text" placeholder="Enter Your Name">
-            </div>
-            <div class="Password">
-              <label for="">Password</label>
-              <input type="password" placeholder="Enter Your Password">
-              <i class="bx bx-hide show-hide"></i>
+
+
+
+
+
+        <form action="">
+          <div class="field name-field">
+            <div class="input-field">
+              <label>Full Name</label>
+              <input type="text" placeholder="Enter your name" class="email" />
             </div>
           </div>
-          <a class="signUb" href="">Sign In</a>
-          <p class="last-p">Don't have an account? <a href="sign-up.html">Sign up</a></p>
+          <div class="field create-password">
+            <div class="input-field">
+              <label>Password</label>
+              <input
+                type="password"
+                placeholder="Create password"
+                class="password"
+              />
+              <i class="bx bx-hide show-hide"></i>
+            </div>
+            <span style="margin-top:15px ;" class="error password-error">
+              <i class="bx bx-error-circle error-icon"></i>
+              <p class="error-text">
+                Please enter atleast 8 charatcer with number, small and
+                capital letter.
+              </p>
+            </span>
+          </div>
+          <div class="input-field button">
+            <input class="submit" type="submit" value="Submit Now" />
+          </div>
+        </form>
+
+          <p class="last-p">Already have an account ? <a href="sign-up.html">Sign up</a></p>
       </div>
     </div>
 
@@ -74,21 +96,7 @@
   </script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/header-footer.js"></script>
-<script>
-  const eye = document.querySelectorAll(".show-hide")
-  eye.forEach((eye) => {
-    eye.addEventListener("click" , () => {
-      const passInbut = eye.parentElement.querySelector("input");
-      if (passInbut.type === "password") {
-        eye.classList.replace("bx-hide", "bx-show")
-        return (passInbut.type = "text");
-      }else {
-        eye.classList.replace("bx-show", "bx-hide");
-        passInbut.type = "password"
-      };
-    });
-  });
-</script>
+<script src="js/sign-in.js"></script>
 </body>
 </html>
 
