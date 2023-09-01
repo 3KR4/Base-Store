@@ -65,6 +65,7 @@ ul {
 input {
   color: var(--paragraph);
 }
+                                                                   /*! scrollBar */
 .scrollBar {
   background: var(--main-color);
   font-size: 30px;
@@ -79,7 +80,20 @@ input {
   cursor: pointer !important;
   display: none;
 }
-
+@media (max-width:992px) {
+  .scrollBar {
+    right: 3%;
+    bottom: 2%;
+  }
+}
+@media (max-width:786px) {
+  .scrollBar {
+    font-size: 20px;
+    right: 3%;
+    bottom: 2%;
+    border-radius: 6px;
+  }
+}
                                                                               /*! Header */
 
 .header {
