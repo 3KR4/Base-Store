@@ -315,25 +315,25 @@ blogCards.innerHTML = blogItems
 }
 rednderblogs();
                                                             //! States
-let nums = document.querySelectorAll(".num")
-let states = document.querySelector(".states") 
-let started = false;
+// let nums = document.querySelectorAll(".num")
+// let states = document.querySelector(".states") 
+// let started = false;
 
-window.onscroll = function () {
-  if (window.scrollY >= states.offsetTop - 900) {
-    if (!started) {
-      nums.forEach((num) => startCount(num));
-    }
-    started = true;
-  }
-};
+// window.onscroll = function () {
+//   if (window.scrollY >= states.offsetTop - 900) {
+//     if (!started) {
+//       nums.forEach((num) => startCount(num));
+//     }
+//     started = true;
+//   }
+// };
 
-function startCount(el) {
-  let goal = el.dataset.goal;
-  let count = setInterval(() => {
-    el.textContent++
-    if (el.textContent == goal) {
-      clearInterval(count)
-    }
-  }, 2000 / goal);
-};
+// function startCount(el) {
+//   let goal = el.dataset.goal;
+//   let count = setInterval(() => {
+//     el.textContent++
+//     if (el.textContent == goal) {
+//       clearInterval(count)
+//     }
+//   }, 2000 / goal);
+// };
