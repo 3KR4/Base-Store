@@ -1,7 +1,6 @@
 const video = document.querySelector(".video")
 const closeVideo = document.querySelector(".closeVideo")
 const openVideo = document.querySelector(".openVideo")
-
 openVideo.onclick = function() {
   video.classList.add("videoClicked")
 }
