@@ -1,4 +1,14 @@
-                                                            //! checkbox
+const video = document.querySelector(".video")
+const closeVideo = document.querySelector(".closeVideo")
+const openVideo = document.querySelector(".openVideo")
+
+openVideo.onclick = function() {
+  video.classList.add("videoClicked")
+}
+closeVideo.onclick = function() {
+  video.classList.remove("videoClicked")
+}
+                                                         //! checkbox
 function check() {
   const checkbox = document.querySelector(".checkbox")
   const priceOne = document.querySelector(".priceOne")
@@ -12,8 +22,7 @@ function check() {
       priceOne.innerHTML = "<div><h3>$29</h3>/per month</div>"
       priceTwo.innerHTML = "<div><h3>$59</h3>/per month</div>"
       pricethere.innerHTML = "<div><h3>$139</h3>/per month</div>" 
-    };
-}
+    };}
                                                             //! Filter
 
 const btns = [
@@ -314,26 +323,3 @@ let blogItems = blogs.map((item) => {
 blogCards.innerHTML = blogItems
 }
 rednderblogs();
-                                                            //! States
-// let nums = document.querySelectorAll(".num")
-// let states = document.querySelector(".states") 
-// let started = false;
-
-// window.onscroll = function () {
-//   if (window.scrollY >= states.offsetTop - 900) {
-//     if (!started) {
-//       nums.forEach((num) => startCount(num));
-//     }
-//     started = true;
-//   }
-// };
-
-// function startCount(el) {
-//   let goal = el.dataset.goal;
-//   let count = setInterval(() => {
-//     el.textContent++
-//     if (el.textContent == goal) {
-//       clearInterval(count)
-//     }
-//   }, 2000 / goal);
-// };

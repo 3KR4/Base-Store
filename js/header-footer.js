@@ -149,19 +149,6 @@ let getMode = localStorage.getItem("mode")
           megaMenu.classList.remove("viewTwo")
         };
       };
-    };
-    window.onclick = function(event) {
-      if (!event.target.matches(".pages")) {
-        let megaMenu = document.querySelector(".mega-menu")
-        if (megaMenu.classList.contains("viewTwo")) {
-          megaMenu.classList.remove("viewTwo")
-        };
-      };
-      if (!event.target.matches(".bars")) {
-        let navlinks = document.querySelector(".nav-links")
-        if (navlinks.classList.contains("view")) {
-          navlinks.classList.remove("view")
-        };
         if (xClose.classList.contains("viewss")) {
           xClose.classList.remove("viewss")
         };
@@ -169,7 +156,7 @@ let getMode = localStorage.getItem("mode")
           bars.classList.remove("viewss")
         };
       };
-    };
+    
     window.addEventListener("scroll", function() {
       let header = document.querySelector(".header");
       header.classList.toggle("sticky", window.scrollY > 0);});
