@@ -1,6 +1,7 @@
 const video = document.querySelector(".video")
 const closeVideo = document.querySelector(".closeVideo")
 const openVideo = document.querySelector(".openVideo")
+const iframe = document.querySelector(".iframe")
 openVideo.onclick = function() {
   video.classList.add("videoClicked")
 }

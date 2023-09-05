@@ -94,7 +94,7 @@ clear_day
         </div>
       </div>
     </div>
-    <a href="sign-up.html">Sign In</a>
+    <a href="sign-up.html">Sign up</a>
   </div>
   </div>
   `
