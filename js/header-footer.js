@@ -1,14 +1,13 @@
-
-                                                                //! Header
-  // <div class="header">
-  //   <nav>
-                  //! html
-  //   </nav>
-  // </div>
-let header = document.querySelector(".header")
-let page = document.querySelector(".menu ul li")
-mainHeader = () =>{
-  return header.innerHTML = `
+//! Header
+// <div class="header">
+//   <nav>
+//! html
+//   </nav>
+// </div>
+let header = document.querySelector(".header");
+let page = document.querySelector(".menu ul li");
+mainHeader = () => {
+  return (header.innerHTML = `
   <div class="container">
   <div class="logo">
     <img src="img/logo.png" alt="">
@@ -97,82 +96,84 @@ clear_day
     <a href="sign-up.html">Sign up</a>
   </div>
   </div>
-  `
+  `);
+};
+mainHeader();
+let body = document.querySelector("body");
+nav = document.querySelector(".header");
+modeToggle = document.querySelector(".darkLight");
+searchToggle = document.querySelector(".search");
+searchInput = document.querySelector(".searchToggel .search-field");
+
+let getMode = localStorage.getItem("mode");
+if (getMode && getMode === "dark-mode") {
+  body.classList.add("dark");
 }
-mainHeader() 
-let body         = document.querySelector("body")
-    nav          = document.querySelector(".header")
-    modeToggle   = document.querySelector(".darkLight")
-    searchToggle = document.querySelector(".search")
-    searchInput = document.querySelector(".searchToggel .search-field")
+modeToggle.addEventListener("click", () => {
+  modeToggle.classList.toggle("active");
+  body.classList.toggle("dark");
+  if (!body.classList.contains("dark")) {
+    localStorage.setItem("mode", "light-mode");
+  } else {
+    localStorage.setItem("mode", "dark-mode");
+  }
+});
+searchToggle.addEventListener("click", () => {
+  searchInput.classList.toggle("active");
+});
 
-let getMode = localStorage.getItem("mode")
-      if(getMode && getMode === "dark-mode"){
-        body.classList.add("dark");
-      }
-    modeToggle.addEventListener("click" , () =>{
-    modeToggle.classList.toggle("active");
-    body.classList.toggle("dark");
-    if(!body.classList.contains("dark")){
-      localStorage.setItem("mode" , "light-mode");
-    }else{
-      localStorage.setItem("mode" , "dark-mode");
-    }
-  })
-  searchToggle.addEventListener("click" , () =>{
-    searchInput.classList.toggle("active")
-  })
+bars = document.querySelector(".bars");
+xClose = document.querySelector(".xClose");
+navLinks = document.querySelector(".nav-links");
+lastLi = document.querySelector(".pages");
+megaMenu = document.querySelector(".mega-menu");
 
-    bars     = document.querySelector(".bars") 
-    xClose   = document.querySelector(".xClose") 
-    navLinks = document.querySelector(".nav-links")
-    lastLi   = document.querySelector(".pages")
-    megaMenu = document.querySelector(".mega-menu")
-    
-    lastLi.onclick = function() {
-      megaMenu.classList.toggle("viewTwo")
+lastLi.onclick = function () {
+  megaMenu.classList.toggle("viewTwo");
+};
+bars.onclick = function () {
+  navLinks.classList.toggle("view");
+  xClose.classList.add("viewss");
+  bars.classList.toggle("viewss");
+};
+xClose.onclick = function () {
+  navLinks.classList.remove("view");
+  xClose.classList.remove("viewss");
+  bars.classList.toggle("viewss");
+};
+window.onclick = function (event) {
+  if (!event.target.matches(".pages")) {
+    let megaMenu = document.querySelector(".mega-menu");
+    if (megaMenu.classList.contains("viewTwo")) {
+      megaMenu.classList.remove("viewTwo");
     }
-    bars.onclick = function() {
-      navLinks.classList.toggle("view")
-      xClose.classList.add("viewss")
-      bars.classList.toggle("viewss")
-    }
-    xClose.onclick = function() {
-      navLinks.classList.remove("view")
-      xClose.classList.remove("viewss")
-      bars.classList.toggle("viewss")
-    }
-    window.onclick = function(event) {
-      if (!event.target.matches(".pages")) {
-        let megaMenu = document.querySelector(".mega-menu")
-        if (megaMenu.classList.contains("viewTwo")) {
-          megaMenu.classList.remove("viewTwo")
-        };
-      };
-        if (xClose.classList.contains("viewss")) {
-          xClose.classList.remove("viewss")
-        };
-        if (bars.classList.contains("viewss")) {
-          bars.classList.remove("viewss")
-        };
-      };
-    
-    window.addEventListener("scroll", function() {
-      let header = document.querySelector(".header");
-      header.classList.toggle("sticky", window.scrollY > 0);});
+  }
+  if (xClose.classList.contains("viewss")) {
+    xClose.classList.remove("viewss");
+  }
+  if (bars.classList.contains("viewss")) {
+    bars.classList.remove("viewss");
+  }
+};
 
-                                                                //! ScrollBar / States
-const scrollBar = document.querySelector(".scrollBar")
-let nums = document.querySelectorAll(".num")
-let states = document.querySelector(".states") 
+window.addEventListener("scroll", function () {
+  let header = document.querySelector(".header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+//! ScrollBar / States
+const scrollBar = document.querySelector(".scrollBar");
+let nums = document.querySelectorAll(".num");
+let states = document.querySelector(".states");
 let started = false;
 
-window.onscroll = function() {
-  if (window.scrollY >= 200) {
-    scrollBar.style.display = "block";
-  } else {
-    scrollBar.style.display = "none";
-  };
+window.onscroll = function () {
+  if(this.scrollY >= 600){
+    scrollBar.classList.add('show')
+}else{
+  scrollBar.classList.remove('show')
+}
+
   if (window.scrollY >= states.offsetTop - 900) {
     if (!started) {
       nums.forEach((num) => startCount(num));
@@ -180,7 +181,7 @@ window.onscroll = function() {
     started = true;
   }
 };
-scrollBar.onclick = function() {
+scrollBar.onclick = function () {
   window.scrollTo({
     left: 0,
     top: 0,
@@ -190,20 +191,20 @@ scrollBar.onclick = function() {
 function startCount(el) {
   let goal = el.dataset.goal;
   let count = setInterval(() => {
-    el.textContent++
+    el.textContent++;
     if (el.textContent == goal) {
-      clearInterval(count)
+      clearInterval(count);
     }
   }, 2000 / goal);
-};
+}
 
-                                                                  //! footer
-  // <div class="footer">
-                  //! html
-  // </div>
-let footer = document.querySelector(".footer")
-mainFooter = () =>{
-  return footer.innerHTML = `
+//! footer
+// <div class="footer">
+//! html
+// </div>
+let footer = document.querySelector(".footer");
+mainFooter = () => {
+  return (footer.innerHTML = `
   <div class="container">
   <div class="main">
       <div class="social">
@@ -265,6 +266,6 @@ mainFooter = () =>{
     <p>© 2025 Base. All rights reserved</p>
   </div>
 </div>
-  `
-}
-mainFooter() 
+  `);
+};
+mainFooter();

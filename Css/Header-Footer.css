@@ -72,24 +72,29 @@ input {
   color: white;
   padding: 2px 12px;
   position: fixed;
-  right: 2%;
+  right: -100px;
   bottom: 4%;
-  z-index: 200;
   border-radius: 8px;
   border: none;
   cursor: pointer !important;
-  display: none;
+  z-index: 200;
+  transition: 0.2s;
+}
+.scrollBar.show {
+  right: 3%;
+}
+.scrollBar:hover {
+  background-color: #f36a8d;
+  transition: 0.3s;
 }
 @media (max-width:992px) {
   .scrollBar {
-    right: 3%;
     bottom: 2%;
   }
 }
 @media (max-width:786px) {
   .scrollBar {
     font-size: 20px;
-    right: 3%;
     bottom: 2%;
     border-radius: 6px;
   }
