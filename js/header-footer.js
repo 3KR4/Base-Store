@@ -118,9 +118,9 @@ modeToggle.addEventListener("click", () => {
     localStorage.setItem("mode", "dark-mode");
   }
 });
-searchToggle.addEventListener("click", () => {
+searchToggle.onclick = function () {
   searchInput.classList.toggle("active");
-});
+}
 
 bars = document.querySelector(".bars");
 xClose = document.querySelector(".xClose");
@@ -147,12 +147,6 @@ window.onclick = function (event) {
     if (megaMenu.classList.contains("viewTwo")) {
       megaMenu.classList.remove("viewTwo");
     }
-  }
-  if (xClose.classList.contains("viewss")) {
-    xClose.classList.remove("viewss");
-  }
-  if (bars.classList.contains("viewss")) {
-    bars.classList.remove("viewss");
   }
 };
 
